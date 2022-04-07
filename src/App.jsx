@@ -1,35 +1,15 @@
 import { useState } from "react";
 import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-import NotFound from "./components/NotFound";
-import Paint from "./components/Paint";
-import Transitions from "./components/Transition";
+import Content from "./components/Content/Content";
 
 import "./App.scss";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div className="App">
-              <header className="App-header">
-                <Link className="App-link" to="/paint">
-                  Paint
-                </Link>
-                <Link className="App-link" to="/transitions">
-                  Transitions
-                </Link>
-              </header>
-            </div>
-          }
-        ></Route>
-        <Route path="/paint" element={<Paint />}></Route>
-        <Route path="/transitions" element={<Transitions />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
-      </Routes>
+      <Content />
     </Router>
   );
 }
