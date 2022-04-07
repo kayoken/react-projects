@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import NotFound from "./components/NotFound";
 import Paint from "./components/Paint";
 import Transitions from "./components/Transition";
 
@@ -27,6 +28,7 @@ function App() {
         ></Route>
         <Route path="/paint" element={<Paint />}></Route>
         <Route path="/transitions" element={<Transitions />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </Router>
   );
