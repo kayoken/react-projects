@@ -14,7 +14,9 @@ function App() {
           element={
             <div className="App">
               <header className="App-header">
-                <Link to="/paint">Paint</Link>
+                <Link className="App-link" to="/paint">
+                  Paint
+                </Link>
               </header>
             </div>
           }
