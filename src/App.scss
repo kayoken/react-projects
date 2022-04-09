@@ -20,22 +20,9 @@
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 0.25rem;
-  width: 150px;
+  min-width: 200px;
   transition: all 0.5s;
   &:hover {
     transform: translateX(3px);
   }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
 }
