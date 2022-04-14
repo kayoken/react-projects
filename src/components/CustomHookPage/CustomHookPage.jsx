@@ -5,7 +5,7 @@ const CustomHookPage = () => {
   const nameRef = useRef("null");
   const [name, setName] = useState("Me");
 
-  const idiot = useIdiot(name);
+  const idiotize = useIdiot(name);
 
   const changeName = (e) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const CustomHookPage = () => {
         <button onClick={changeName}>Make Idiot!</button>
       </form>
       <div>Input was {name}</div>
-      <h2>{idiot}</h2>
+      <h2>{idiotize}</h2>
     </div>
   );
 };

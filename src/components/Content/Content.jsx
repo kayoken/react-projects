@@ -6,6 +6,7 @@ import NotFound from "../NotFound";
 import Paint from "../Paint";
 import Transitions from "../Transition";
 import CustomHookPage from "../CustomHookPage";
+import Mutations from "../Mutations";
 
 const Content = () => {
   const location = useLocation();
@@ -36,6 +37,9 @@ const Content = () => {
               <Link className="App-link" to="/custom-hooks">
                 CustomHooks
               </Link>
+              <Link className="App-link" to="/mutations">
+                Mutations
+              </Link>
             </header>
           </div>
         }
@@ -43,6 +47,7 @@ const Content = () => {
       <Route path="/paint" element={<Paint />}></Route>
       <Route path="/transitions" element={<Transitions />}></Route>
       <Route path="/custom-hooks" element={<CustomHookPage />}></Route>
+      <Route path="/mutations" element={<Mutations />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Routes>
   );
