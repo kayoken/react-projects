@@ -9,7 +9,9 @@ import "./App.scss";
 function App() {
   return (
     <Router>
-      <Content />
+      <div>
+        <Content />
+      </div>
     </Router>
   );
 }
