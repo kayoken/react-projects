@@ -46,13 +46,13 @@ export default function Mutations() {
   }
 
   return (
-    <>
+    <div className="App">
       <AddTodo onAddTodo={handleAddTodo} />
       <TaskList
         todos={todos}
         onChangeTodo={handleChangeTodo}
         onDeleteTodo={handleDeleteTodo}
       />
-    </>
+    </div>
   );
 }

@@ -1,5 +1,5 @@
 const Transitions = () => {
-  return <div>Transitions</div>;
+  return <div className="App">Transitions</div>;
 };
 
 export default Transitions;

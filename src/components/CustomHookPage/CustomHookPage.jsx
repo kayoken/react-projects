@@ -13,7 +13,7 @@ const CustomHookPage = () => {
   };
 
   return (
-    <div>
+    <div className="App">
       <form>
         <input placeholder="name" ref={nameRef} />
         <input

@@ -1,6 +1,6 @@
 const NotFound = () => {
   return (
-    <div>
+    <div className="App">
       <h1>404 - Not Found</h1>
     </div>
   );
