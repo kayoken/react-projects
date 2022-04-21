@@ -9,11 +9,25 @@
   color: white;
 }
 
+.App {
+  &.Accordion {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: justify;
+    h3 {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}
+
 .fadeIn {
-  animation: 1s fadeIn forwards;
+  animation: 0.5s fadeIn forwards;
 }
 .fadeOut {
-  animation: 1s fadeOut forwards;
+  background-color: black;
+  animation: 0s fadeOut forwards;
 }
 
 .App-header {
@@ -41,23 +55,25 @@
 }
 
 @keyframes fadeIn {
-  from {
-    // opacity: 0;
-    background-color: #000000;
+  0.00% {
+    background-color: black;
   }
-  to {
-    // opacity: 1;
-    background-color: #282c34;
+  14.29% {
+    background-color: orange;
+  }
+  100.00% {
+    background-color: black;
   }
 }
 
 @keyframes fadeOut {
-  from {
-    // opacity: 1;
-    background-color: #282c34;
+  0.00% {
+    background-color: black;
   }
-  to {
-    // opacity: 0;
-    background-color: #000;
+  14.29% {
+    background-color: orange;
+  }
+  100.00% {
+    background-color: black;
   }
 }

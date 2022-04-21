@@ -7,6 +7,7 @@ import Paint from "../Paint";
 import Transitions from "../Transition";
 import CustomHookPage from "../CustomHookPage";
 import Mutations from "../Mutations";
+import Accordion from "../Accordion";
 
 const Content = () => {
   const location = useLocation();
@@ -39,6 +40,9 @@ const Content = () => {
                 <Link className="App-link" to="/paint">
                   Paint
                 </Link>
+                <Link className="App-link" to="/accordion">
+                  Accordion
+                </Link>
                 <Link className="App-link" to="/transitions">
                   Transitions
                 </Link>
@@ -53,6 +57,7 @@ const Content = () => {
           }
         ></Route>
         <Route path="/paint" element={<Paint />}></Route>
+        <Route path="/accordion" element={<Accordion />}></Route>
         <Route path="/transitions" element={<Transitions />}></Route>
         <Route path="/custom-hooks" element={<CustomHookPage />}></Route>
         <Route path="/mutations" element={<Mutations />}></Route>
